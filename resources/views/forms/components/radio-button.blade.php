@@ -12,7 +12,7 @@
     @if ($isInline())
         <x-slot name="labelSuffix">
     @endif
-    <x-filament-support::grid
+    <x-filament-forms::grid
         :default="$getColumns('default')"
         :sm="$getColumns('sm')"
         :md="$getColumns('md')"
@@ -71,7 +71,7 @@
                 </div>
             </div>
         @endforeach
-    </x-filament-support::grid>
+    </x-filament-forms::grid>
     @if ($isInline())
         </x-slot>
     @endif
